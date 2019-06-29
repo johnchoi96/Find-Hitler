@@ -15,8 +15,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var webkit: WKWebView!
     @IBOutlet weak var scoreLbl: UILabel!
     
+    // current score
     var score = 0
     
+    /// Initial set up for this controller
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,6 +31,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         scoreLbl.text = String(format: "Score: %d", score)
     }
     
+    /// Defines the behavior for the reset button.
+    /// - Parameters: sender the source of the action
     @IBAction func resetBtnActivated(_ sender: UIButton) {
         let urlAddress = URL(string: "https://en.wikipedia.org/wiki/Special:Random") // start point
         let url = URLRequest(url: urlAddress!)
@@ -41,6 +45,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         scoreLbl.text = String(format: "Score: %d", score)
     }
     
+    /// WebKit Delegate function.
+    /// Called everytime the player clicks on the link.
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         print("Clicked link " + navigationAction.request.url!.absoluteString)
         let currentUrl = navigationAction.request.url!.absoluteString
@@ -70,4 +76,3 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
     }
 }
-
