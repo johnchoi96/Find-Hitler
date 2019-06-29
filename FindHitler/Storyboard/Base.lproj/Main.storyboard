@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,33 +15,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindHitler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpq-ya-PgM">
-                                <rect key="frame" x="0.0" y="82" width="375" height="696"/>
+                                <rect key="frame" x="0.0" y="82" width="414" height="780"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: %d" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3A-KK-BEm">
-                                <rect key="frame" x="148" y="44" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: %d" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3A-KK-BEm">
+                                <rect key="frame" x="148" y="44" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71g-0v-fUl">
+                                <rect key="frame" x="345" y="44" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBtnActivated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCh-33-3ER"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dpq-ya-PgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6lT-X8-5Zb"/>
                             <constraint firstItem="dpq-ya-PgM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BLX-jl-bIo"/>
+                            <constraint firstItem="71g-0v-fUl" firstAttribute="leading" secondItem="T3A-KK-BEm" secondAttribute="trailing" constant="80" id="DcF-YN-wZF"/>
                             <constraint firstItem="T3A-KK-BEm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JhU-mX-gW2"/>
+                            <constraint firstItem="dpq-ya-PgM" firstAttribute="top" secondItem="71g-0v-fUl" secondAttribute="bottom" constant="8" id="Swd-ex-Br4"/>
+                            <constraint firstItem="dpq-ya-PgM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZeN-2k-USZ"/>
+                            <constraint firstItem="71g-0v-fUl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aZ3-b2-5sh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T3A-KK-BEm" secondAttribute="trailing" constant="149" id="cOm-l0-tYW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="71g-0v-fUl" secondAttribute="trailing" constant="30" id="gJn-BO-QdX"/>
                             <constraint firstItem="T3A-KK-BEm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="kce-oC-Be3"/>
                             <constraint firstItem="dpq-ya-PgM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="l8a-7g-m06"/>
                             <constraint firstItem="dpq-ya-PgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mNU-W7-pnJ"/>
                             <constraint firstItem="dpq-ya-PgM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="ml0-jq-qMm"/>
+                            <constraint firstItem="dpq-ya-PgM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qqi-3t-8bX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
