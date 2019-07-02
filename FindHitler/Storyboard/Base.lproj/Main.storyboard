@@ -39,6 +39,11 @@
                                     <action selector="resetBtnActivated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCh-33-3ER"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZcI-Lg-RXP">
+                                <rect key="frame" x="0.0" y="82" width="414" height="780"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,13 +65,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="blocker" destination="ZcI-Lg-RXP" id="naF-0v-wRf"/>
                         <outlet property="scoreLbl" destination="T3A-KK-BEm" id="GJZ-xU-4PZ"/>
                         <outlet property="webkit" destination="dpq-ya-PgM" id="HcT-Jc-GzR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58.399999999999999" y="114.53201970443351"/>
+            <point key="canvasLocation" x="-59.420289855072468" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>

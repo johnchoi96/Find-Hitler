@@ -12,6 +12,7 @@ import WebKit
 
 class ViewController: UIViewController, WKNavigationDelegate {
 
+    @IBOutlet weak var blocker: UIImageView!
     @IBOutlet weak var webkit: WKWebView!
     @IBOutlet weak var scoreLbl: UILabel!
     
@@ -29,6 +30,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         webkit.allowsBackForwardNavigationGestures = true // for debugging only
         
         scoreLbl.text = String(format: "Score: %d", score)
+        blocker.isHidden = true
     }
     
     /// Defines the behavior for the reset button.
@@ -43,6 +45,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         webkit.isUserInteractionEnabled = true
         score = 0
         scoreLbl.text = String(format: "Score: %d", score)
+        blocker.isHidden = true
     }
     
     /// WebKit Delegate function.
@@ -59,6 +62,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             
             decisionHandler(.allow)
             webkit.isUserInteractionEnabled = false
+            blocker.isHidden = false
             return
         }
         
