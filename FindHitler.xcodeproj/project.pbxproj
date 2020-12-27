@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23EDD79246AA42500FCBBA9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B695D22C69F240084E5B0 /* WebKit.framework */; };
 		D2477C112447BC94009E490B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2477C102447BC94009E490B /* RootViewController.swift */; };
 		D2477C132447C39A009E490B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2477C122447C39A009E490B /* AboutViewController.swift */; };
 		D76B693D22C69BCC0084E5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B693C22C69BCC0084E5B0 /* AppDelegate.swift */; };
@@ -15,7 +16,6 @@
 		D76B694422C69BCE0084E5B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76B694322C69BCE0084E5B0 /* Assets.xcassets */; };
 		D76B694722C69BCE0084E5B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76B694522C69BCE0084E5B0 /* LaunchScreen.storyboard */; };
 		D76B695222C69BCE0084E5B0 /* FindHitlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B695122C69BCE0084E5B0 /* FindHitlerTests.swift */; };
-		D76B695E22C69F240084E5B0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B695D22C69F240084E5B0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76B695E22C69F240084E5B0 /* WebKit.framework in Frameworks */,
+				D23EDD79246AA42500FCBBA9 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +183,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "John Choi";
 				TargetAttributes = {
 					D76B693822C69BCC0084E5B0 = {
@@ -310,6 +310,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -371,6 +372,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -407,7 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JDGUK4DRH;
 				INFOPLIST_FILE = FindHitler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JDGUK4DRH;
 				INFOPLIST_FILE = FindHitler/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
