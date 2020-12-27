@@ -16,6 +16,17 @@ class RootViewController: UIViewController {
         super.title = "Find Hitler"
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = false
+    }
 
     /*
     // MARK: - Navigation

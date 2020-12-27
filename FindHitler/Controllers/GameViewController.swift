@@ -27,7 +27,8 @@ class GameViewController: UIViewController, WKNavigationDelegate {
         let url = URLRequest(url: urlAddress!)
         webkit?.load(url)
         webkit.navigationDelegate = self
-        webkit.allowsBackForwardNavigationGestures = true // for debugging only
+        
+        webkit.scrollView.bounces = false
         
         scoreLbl.text = String(format: "Score: %d", score)
         blocker.isHidden = true
