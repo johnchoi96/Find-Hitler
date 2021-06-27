@@ -10,6 +10,7 @@
 		D23EDD79246AA42500FCBBA9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76B695D22C69F240084E5B0 /* WebKit.framework */; };
 		D2477C112447BC94009E490B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2477C102447BC94009E490B /* RootViewController.swift */; };
 		D2477C132447C39A009E490B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2477C122447C39A009E490B /* AboutViewController.swift */; };
+		D25718AB2688F46200999FFB /* Smooth-Thang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D25718AA2688F46200999FFB /* Smooth-Thang.mp3 */; };
 		D76B693D22C69BCC0084E5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B693C22C69BCC0084E5B0 /* AppDelegate.swift */; };
 		D76B693F22C69BCC0084E5B0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B693E22C69BCC0084E5B0 /* GameViewController.swift */; };
 		D76B694222C69BCC0084E5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76B694022C69BCC0084E5B0 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		D2477C102447BC94009E490B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		D2477C122447C39A009E490B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D25718AA2688F46200999FFB /* Smooth-Thang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Smooth-Thang.mp3"; sourceTree = "<group>"; };
 		D76B693922C69BCC0084E5B0 /* FindHitler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindHitler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76B693C22C69BCC0084E5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D76B693E22C69BCC0084E5B0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D25718AC2688F46C00999FFB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D25718AA2688F46200999FFB /* Smooth-Thang.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		D76B693022C69BCC0084E5B0 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 				D76B695F22C69FAA0084E5B0 /* Delegates */,
 				D76B694322C69BCE0084E5B0 /* Assets.xcassets */,
 				D76B694822C69BCE0084E5B0 /* Info.plist */,
+				D25718AC2688F46C00999FFB /* Sounds */,
 			);
 			path = FindHitler;
 			sourceTree = "<group>";
@@ -122,8 +133,8 @@
 		D76B696022C69FB60084E5B0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D76B693E22C69BCC0084E5B0 /* GameViewController.swift */,
 				D2477C102447BC94009E490B /* RootViewController.swift */,
+				D76B693E22C69BCC0084E5B0 /* GameViewController.swift */,
 				D2477C122447C39A009E490B /* AboutViewController.swift */,
 			);
 			path = Controllers;
@@ -222,6 +233,7 @@
 				D76B694722C69BCE0084E5B0 /* LaunchScreen.storyboard in Resources */,
 				D76B694422C69BCE0084E5B0 /* Assets.xcassets in Resources */,
 				D76B694222C69BCC0084E5B0 /* Main.storyboard in Resources */,
+				D25718AB2688F46200999FFB /* Smooth-Thang.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,21 +7,34 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var backgroundMusic: AVAudioPlayer!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        backgroundMusic = try! AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "Smooth-Thang", withExtension: "mp3")!)
+        backgroundMusic.numberOfLoops = -1
+        backgroundMusic.play()
+        
+        let disclaimer = UIAlertController(title: "Beta disclaimer", message: "Background music is not yet approved by the sound creator", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        disclaimer.addAction(action)
+        
+        
+        window?.rootViewController?.present(disclaimer, animated: true, completion: nil)
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        backgroundMusic.stop()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -35,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        backgroundMusic.play()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

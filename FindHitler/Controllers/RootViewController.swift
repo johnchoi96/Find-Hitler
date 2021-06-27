@@ -13,7 +13,6 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        super.title = "Find Hitler"
     }
     
     override func viewWillAppear(_ animated: Bool) {
